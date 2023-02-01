@@ -299,7 +299,8 @@ footer img {
     }
 
     .input-text {
-        width: 447px;
+        width: 350px;
+        font-size: 22px;
     }
 
     .button-desencripatar, .button-encriptar {
