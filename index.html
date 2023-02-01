@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/VectorA.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header-encabezado">
+        <div class="box">
+            <div class="box-logo">
+                <img src="img/logoAluraBlanco2.png" alt="logotipo de alura">
+            </div>
+            <div class="box-title">
+                <h1>Challenge ONE Encriptador de Texto</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main (Cuerpo de la página) -->
+    <main class="main-cuerpo">
+        <!-- Seccion para la letra A -->
+        <div class="secction-principal">
+            <section class="section-principal-letterA-logo">
+                <img src="img/VectorA.png" class="logo-alura" alt="logo A de Alura">
+            </section>
+
+            <!-- Seccion izquierda para escribir el texto a desencriptar -->
+            <section class="section-principal-izquierda">
+                <input type="text" id="text" class="input-text" placeholder= "Ingrese el texto aquí"  required>  <!-- value= "Ingrese el texto aquí"  -->
+            </section>             
+
+            <!-- Seccion derecha para mostrar mensaje desencriptado -->
+            <section class="secction-principal-derecha">
+                <div class="div-derecha">
+                    <div class="area-mensaje-desencriptado">
+                        <p class="area-mensaje-texto" id="area_mensaje_texto">Aqui va el texto encriptado</p>
+                    </div>
+                    <img src="img/Muñeco.png" class="img_munieco" id="img_munieco" alt="Muñeco como imagen del encriptador de texto">
+                    <div class="area_mensaje_informativo">
+                        <h2 class="mensaje_mostrar" id="mensaje_mostrar">Ningún mensaje fue encontrado</h2>
+                        <p class="parrafo_mostrar" id="parrafo_mostrar">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        <!-- <textarea name="texto2" id="texto2" rows="8" cols="80" rows="10">Ingresa el texto que desees encriptar o Desencriptar</textarea> -->
+                    </div>
+                    <input type="submit" name="button-copy" id="button-copy" class="buttons buttons-copy" value="Copiar" onclick="copy('area_mensaje_texto')">
+                </div>
+            </section>
+
+            <!-- Sección de botones -->
+            <section class="secction-principal-botones">
+                <div class="secction-principal-buttons-fin">
+                    <div class="section-principal-buttons-img-p">
+                        <img src="img/vectorAdvertencia.png" alt="Imagen de advertencia">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="secction-buttons">
+                        <input type="submit" name="button-encriptar" id="button-encriptar" class="buttons button-encriptar" value="Encriptar" onclick="encryptText(), showMessageAndButton()">
+                        <input type="submit" name="button-desencripta" id="button-desencriptar" class="buttons button-desencripatar" value="Desencriptar" onclick="decryptText(), showMessageAndButton()">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-piepagina">
+        <img src="img/logoAluraBlanco2.png" alt="logo de alura">
+        <p class="copyright">&copy Copyright Challenge One Encriptador de Texto by Lucero Luciano - Enero 2023</p>
+    </footer>
+
+    <!-- Script of JS -->
+    <script src="scriptEncriptar.js"></script>
+</body>
+</html>
