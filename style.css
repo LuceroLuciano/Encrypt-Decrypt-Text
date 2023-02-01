@@ -317,4 +317,14 @@ footer img {
     .img_munieco {
         display: none;
     }    
+
+    .buttons {
+        width: 280px;
+    }
+
+    .footer {
+        width: 93.4%;
+        position: absolute;
+        margin-left: 1%;
+    }
 }
